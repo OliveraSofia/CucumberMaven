@@ -15,7 +15,8 @@ import org.junit.runner.RunWith;
                 "junit:target/cucumber-report/cucumber.xml",
                 "usage:target/cucumber-report/cucumber-usage.json",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
-        }
+        },
+        tags = "@Amazon"
 )
 public class AmazonRunner {
 }

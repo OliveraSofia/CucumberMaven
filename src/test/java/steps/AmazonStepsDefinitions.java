@@ -10,6 +10,8 @@ import pages.AmazonHomePage;
 
 public class AmazonStepsDefinitions {
 
+    //To do: Update Steps Names to be (unicly identify) by feature
+
     @Given("^Main page is load$")
     public void mainPageIsLoad() throws Exception {
         Driver.setup();
