@@ -1,5 +1,6 @@
 package steps;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -21,7 +22,6 @@ public class WikipediaStepsDefinitions {
     @When("^The Home page is load$")
     public void openMainPage(){
         WikipediaHomePage.openPage();
-        WikipediaHomePage.initHashMap();
     }
 
     @Then("^Close the browser$")
@@ -30,9 +30,41 @@ public class WikipediaStepsDefinitions {
 
     }
 
-    @When("^Language \"([^\"]*)\"  is Selected$")
+    @When("^Language \"([^\"]*)\" is Selected$")
     public void selectLanguage(String language){
         WikipediaHomePage.initHashMap();
         WikipediaHomePage.selectLanguage(language);
     }
+
+    // Under construction check on Home Page
+    @Then("^The mine page is displayed on $")
+    public void verifyPageLanguage(String language){
+        WikipediaHomePage.verifyPageLanguage(language);
+    }
+
+    @When("^User clicks on access Link$")
+    public void clickOnAccess(){
+        WikipediaHomePage.goToLoguinPage();
+    }
+
+    @Given("^English user is on login Page$")
+    public void loadLoguinENChrome() throws Exception {
+        WikipediaHomePage.openBrowser("chrome");
+        WikipediaHomePage.openPage();
+        WikipediaHomePage.initHashMap();
+        WikipediaHomePage.selectLanguage("English");
+        WikipediaHomePage.goToLoguinPage();
+    }
+
+    @When("^User login with \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void loginPage(String username, String password){
+        WikipediaHomePage.setLogin(username, password);
+    }
+
+    @And("^Click on submit button$")
+     public void clickOnSubmitLogin(){
+         WikipediaHomePage.clickOnSubmitLogin();
+        }
+
+
 }

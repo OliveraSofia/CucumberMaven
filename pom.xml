@@ -100,7 +100,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>AppiumTemplate</projectName>
+                            <projectName>Templates</projectName>
                             <skip>false</skip>
                             <buildNumber>1</buildNumber>
                             <outputDirectory>target/cucumber-report/advanced-report</outputDirectory>
