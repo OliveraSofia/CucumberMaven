@@ -47,6 +47,7 @@ public class WikipediaStepsDefinitions {
         WikipediaHomePage.goToLoguinPage();
     }
 
+    //This step put together other steps to have redduced the steps on features
     @Given("^English user is on login Page$")
     public void loadLoguinENChrome() throws Exception {
         WikipediaHomePage.openBrowser("chrome");

@@ -15,4 +15,13 @@ On this feature I have made on setup a method to detect the Operative system whe
 ## Wikipedia feature
 
 This is a feature with static components but with a lot of scenarios. On this feature, I have made a setup where it is able to select on test cases which browser or browsers will be run. (or can be tested on different browsers on the same run)
-I have used hashmaps for multiple item selections
+I have used hashmaps for multiple item selections.
+
+
+##Next Steps checklist
+
+Next steps to cuntinue creating this template:
+
+* Use a xls file to take sensitive data (usernames and passwords).
+* Reserch Language reconigtion tools. 
+* Implement appium to test on mobile platforms
