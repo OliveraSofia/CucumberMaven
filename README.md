@@ -22,6 +22,10 @@ I have used hashmaps for multiple item selections.
 
 Next steps to cuntinue creating this template:
 
-* Use a xls file to take sensitive data (usernames and passwords).
-* Reserch Language reconigtion tools. 
+* Use cloude or encription for sencible data (data injection)
+* Reserch  localization
 * Implement appium to test on mobile platforms
+* Selenium hub
+*run with param 
+*report fail (mail/results)
+*minimize resources

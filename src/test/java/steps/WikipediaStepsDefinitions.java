@@ -13,6 +13,11 @@ public class WikipediaStepsDefinitions {
 
     //Testing with Several browsers:
 
+    //To do Ordenar steps
+    //make steps and featuress claan make the mos little posible
+    // single place to manteniance
+    //paralel
+    //think as an user
     @Given("^User choose the \"([^\"]*)\" browser$")
     public void openPageOnBrowser(String browser) throws Exception {
         WikipediaHomePage.openBrowser(browser);
@@ -47,7 +52,7 @@ public class WikipediaStepsDefinitions {
         WikipediaHomePage.goToLoguinPage();
     }
 
-    //This step put together other steps to have redduced the steps on features
+    //This step put together other steps to have reduced the steps on features
     @Given("^English user is on login Page$")
     public void loadLoguinENChrome() throws Exception {
         WikipediaHomePage.openBrowser("chrome");
